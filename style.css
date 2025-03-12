@@ -1,1 +1,46 @@
-/* add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+html {
+  font-family: "Questrial", sans-serif;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+}
+
+.nav__buffer {
+  height: calc(5rem + 3px);
+}
+
+.nav__item {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.nav__item:nth-child(1) {
+  grid-column: 1;
+  border-right: 1px solid black;
+}
+
+.nav__item:nth-child(2) {
+  grid-column: 2;
+  border-right: 1px solid black;
+}
+
+.nav__item:nth-child(3) {
+  grid-column: 7;
+  border-left: 1px solid black;
+}
+
+.nav__item:nth-child(4) {
+  grid-column: 8;
+  border-left: 1px solid black;
+}
